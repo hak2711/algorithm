@@ -13,11 +13,13 @@
 <br/>
 
 ## Programmers
-<ol> level 01
+### level 01
+<ol>
   <li>3집법 뒤집기</li>
   <li>두 개 뽑아서 더하기</li>
 </ol>
 
-<ol> level 02
+### level 02
+<ol> 
   <li>더 맵게</li>
 </ol>
