@@ -44,6 +44,7 @@
   <li>H-Index</li>
   <li>괄호 회전하기</li>
   <li>주식가격</li>
+  <li>124 나라의 숫자<
 </ol>
 
 ### level 03
