@@ -1,9 +1,25 @@
 # algorithm
+
 알고리즘 문제 풀이 코드들
 
 <br/>
 
 ## BOJ
+
+### 입출력 기본
+
+<ol>
+  <li>1000번 'A+B'</li>
+  <li>2557번 'Hello World'</li>
+  <li>2558번 'A+B - 2'</li>
+  <li>10950번 'A+B - 3'</li>
+  <li>10951번 'A+B - 4'</li>
+  <li>10952번 'A+B - 5'</li>
+  <li>10953번 'A+B - 6'</li>
+</ol>
+
+### 기타
+
 <ol>
   <li>1260번 'DFS와 BFS'</li>
   <li>1463번 '1로 만들기'</li>
@@ -25,7 +41,9 @@
 <br/>
 
 ## Programmers
+
 ### level 01
+
 <ol>
   <li>3집법 뒤집기</li>
   <li>두 개 뽑아서 더하기</li>
@@ -39,6 +57,7 @@
 </ol>
 
 ### level 02
+
 <ol> 
   <li>더 맵게</li>
   <li>가장 큰 수</li>
@@ -51,6 +70,7 @@
 </ol>
 
 ### level 03
+
 <ol>
   <li>2xn 타일</li>
   <li>네트워크</li>
