@@ -4,5 +4,5 @@
 
 <br/>
 
-- ### [BOJ](./BOJ/README.md)
+- ### [BOJ](./BOJ)
 - ### [Programmers](./Programmers)
