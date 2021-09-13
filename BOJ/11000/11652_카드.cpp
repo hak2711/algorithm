@@ -18,24 +18,27 @@ int main(void)
 
     sort(arr, arr + n);
 
-    int maxv = 0;
+    int maxCnt = 0;
     int maxIndex = 0;
     int count = 1;
+    int i;
 
-    for (int i = 1; i <= n; i++)
+    for (i = 1; i < n; i++)
     {
         if (arr[i - 1] == arr[i])
             count++;
         else
         {
-            if (maxv < count)
+            if (maxCnt < count)
             {
-                maxv = count;
+                maxCnt = count;
                 maxIndex = i - 1;
             }
             count = 1;
         }
     }
+    if (count > maxCnt)
+        maxIndex = i - 1;
 
     printf("%lld", arr[maxIndex]);
 }
