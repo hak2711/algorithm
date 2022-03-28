@@ -1,6 +1,7 @@
 //input : nums = [1,2,3,1]
 //output : true
 
+//it takes too long time if we call find function for every element.
 class Solution {
 public:
     bool containsDuplicate(vector<int>& nums) {
