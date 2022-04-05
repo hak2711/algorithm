@@ -54,3 +54,62 @@ public:
         return true;
     }
 };
+
+
+//2
+#define MAX 9
+
+class Solution {
+public:
+    bool isValidSudoku(vector<vector<char>>& board) {
+
+        //check row for every elements
+        for(int i = 0; i<board.size(); i++){
+            bool checkRow[MAX] = {false};
+            
+            for(int j = 0; j<board[i].size(); j++){
+                if(board[i][j] !='.'){
+                    if(checkRow[board[i][j]-'1']){
+                        return false;
+                    }
+                    else
+                        checkRow[board[i][j]-'1'] = true;
+                }
+            }
+        }
+        
+        //check col for every elements
+        for(int i = 0; i<board.size(); i++){
+            bool checkCol[MAX] = {false};
+            
+            for(int j = 0; j<board[i].size(); j++){
+                if(board[j][i] !='.'){
+                    if(checkCol[board[j][i]-'1']){
+                        return false;
+                    }
+                    else
+                        checkCol[board[j][i]-'1'] = true;
+                }
+            }
+        }
+        
+        //check box for every elements
+        for(int i = 0; i<board.size(); i++){
+            bool checkBox[MAX] = {false};
+            
+            for(int j = 0; j<board[i].size(); j++){
+                int x = (i/3)*3+j/3;
+                int y = (i%3)*3+j%3;
+                if(board[x][y] !='.'){
+                    if(checkBox[board[x][y]-'1']){
+                        return false;
+                    }
+                    else
+                        checkBox[board[x][y]-'1'] = true;
+                }
+            }
+        }
+        
+        return true;
+    }
+};
