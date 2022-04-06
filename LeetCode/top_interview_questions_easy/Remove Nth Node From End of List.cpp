@@ -33,17 +33,21 @@ public:
         ListNode *target = nodes.top();
         nodes.pop();
         
+        //target is the middle node
         if(target->next && !nodes.empty()){
             ListNode *prev = nodes.top();
             prev->next = target->next;
         }
+        //target is the last node
         else if(!target->next && !nodes.empty()){
             ListNode *prev = nodes.top();
             prev->next = NULL;
         }
+        //target is the first node
         else if(target->next){
             head = target->next;
         }
+        //target is the only one node
         else
             head = NULL;
         
