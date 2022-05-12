@@ -1,3 +1,6 @@
+//Input: nums = [-4,-1,0,3,10]
+//Output: [0,1,9,16,100]
+
 class Solution {
 public:
     vector<int> sortedSquares(vector<int>& nums) {
