@@ -1,5 +1,5 @@
-Input: s = "   fly me   to   the moon  "
-Output: 4
+#Input: s = "   fly me   to   the moon  "
+#Output: 4
 
 class Solution(object):
     def lengthOfLastWord(self, s):
