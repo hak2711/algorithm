@@ -16,9 +16,8 @@ bool cmp(ci a, ci b){
   return a.second > b.second;
 }
 
-int calculateAverage(vector<int> &v){
-    int sum = accumulate(v.begin(),v.end(),0);
-    return round((float)sum/(float)v.size());
+int calculateAverage(int sum, int size){
+    return round((float)sum/(float)size());
 }
 
 int calculateMedian(vector<int> &v){
@@ -48,7 +47,7 @@ int calculateRange(map<int,int> &cnt){
 }
 
 int main(){
-    int n;
+    int n, sum = 0;
     cin >> n;
 
     vector<int> nums(n);
@@ -57,9 +56,10 @@ int main(){
     for(int i = 0; i<n; i++){
         cin >> nums[i];
         cnt[nums[i]]++;
+        sum += nums[i];
     }
 
-    cout << calculateAverage(nums) << "\n";
+    cout << calculateAverage(sum, n) << "\n";
     cout << calculateMedian(nums) << "\n";
     cout << calculateMode(cnt) << "\n";
     cout << calculateRange(cnt) << "\n";

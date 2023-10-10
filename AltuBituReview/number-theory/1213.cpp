@@ -38,11 +38,13 @@ int main(){
 
     int middlelength = answer.size();
     string st(answer.crbegin(), answer.crend());
-    answer += st;
 
     if(s.size()%2==1){
-          answer.insert(answer.begin()+middlelength,'A'+middleidx);
+          answer+=('A'+middleidx);
     }
+    
+    answer += st;
+
 
     cout << answer;
 }
